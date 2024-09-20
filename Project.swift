@@ -15,7 +15,9 @@ let project = Project(
             ),
             sources: ["WishlistWrangler/Sources/**"],
             resources: ["WishlistWrangler/Resources/**"],
-            dependencies: []
+            dependencies: [
+                .external(name: "Bedrock"),
+            ]
         ),
         .target(
             name: "WishlistWranglerTests",
